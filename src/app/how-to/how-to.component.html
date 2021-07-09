@@ -1,0 +1,82 @@
+<div class="container p-2">
+    <div class="jumbotron text-center"> 
+      <h3> 
+        This Is Not An Exercise, This Is A Habit. 
+      </h3> 
+    </div> 
+  </div> 
+  
+  <div class="container"> 
+    <div class="row"> 
+      <div class="col-sm-4 col-md-4 col-lg-4 rows"> 
+        <h3><a routerLink="/outdoor">Outdoor.</a></h3> 
+        <p> 
+          This is how I do my daily outdoor routine when I... 
+          <a routerLink="/outdoor">see more.</a> 
+        </p> 
+        <img alt="img" class="img-responsive" src="assets/img/Outdoor2.jpg" /> 
+        <br /> 
+      </div> 
+  
+      <div class="col-sm-4 col-md-4 col-lg-4 rows"> 
+        <h3><a routerLink="/work">While Working.</a></h3> 
+        <p> 
+          You might think looking at the computer for hours will... 
+          <a routerLink="/work">see more.</a> 
+        </p> 
+        <img alt="img" class="img-responsive" src="assets/img/WhileWork.jpg" /> 
+        <br /> 
+      </div> 
+      <div class="col-sm-4 col-md-4 col-lg-4 rows"> 
+        <h3><a routerLink="/indoor">Indoor.</a></h3> 
+        <p>
+          What I do when Im home is just looking at my snellen... 
+          <a routerLink="/indoor">see more.</a> 
+        </p> 
+        <img alt="img" class="img-responsive" src="assets/img/newindoor.jpg" /> 
+        <br /> 
+      </div> 
+    </div> 
+    <br /><br /> 
+    
+  
+    <h4>Leave a Reply</h4> 
+    <p>Comment</p> 
+    <textarea name="comments" [(ngModel)]="comment.comment"></textarea> 
+  
+    
+    <table> 
+      <tr> 
+        <td> 
+          <input 
+            class="nameTxt" 
+            placeholder="name not required." 
+            type="text" 
+            [(ngModel)]="comment.name" 
+          /> 
+        </td> 
+      </tr> 
+      <tr> 
+        <td> 
+          <br />
+          <button (click)="add()" class="btn btn-primary"> 
+            Post Comment 
+          </button> 
+        </td> 
+      </tr> 
+    </table> 
+  
+    <table class="table"> 
+      <tbody>
+        <tr *ngFor="let data of commentArray"> 
+          <td style="color:blue;"> 
+             {{ data.name }} 
+            <img alt="img" class="default" src="assets/img/default.png" /> 
+          </td> 
+          <td>{{ data.comment }}</td> 
+        </tr> 
+      </tbody> 
+    </table> 
+  </div> 
+  
+   

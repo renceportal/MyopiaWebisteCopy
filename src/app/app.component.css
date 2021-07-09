@@ -1,0 +1,93 @@
+.pageContentWrapper {
+    min-height: calc(100vh - 95px); 
+} 
+  
+.bgColor {
+background-color: #232323 !important;  
+}
+
+  .footerText { 
+    color: white; 
+    margin: 0 auto; 
+  } 
+  
+  .nav-link { 
+    color: black; 
+    font-weight: bold; 
+  } 
+  
+  .Revesible { 
+    color: #8b0000; 
+    font-size: 30px; 
+  } 
+  
+  .Myopia { 
+    color: #006699; 
+    font-size: 22px; 
+  } 
+  
+  .navbar-toggler-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+  } 
+  
+  .img-responsive { 
+    height: 35px; 
+    width: 35px; 
+    background-image: none; 
+  } 
+
+  .img-responsiveBook { 
+    height: 45px; 
+    width: 45px; 
+    background-image: none; 
+    background-color: red !important;
+  } 
+  
+  .feedback { 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    border-color: #46b8da; 
+  } 
+  
+  .feedback1 { 
+    color: white; 
+    padding: 10px 60px; 
+    border-radius: 4px; 
+    border-color: #46b8da; 
+  } 
+
+  .book { 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    border-color: #46b8da; 
+  } 
+  
+  #mybutton { 
+    position: fixed; 
+    bottom: 8px; 
+    right: 0px; 
+  } 
+
+  #mybuttonBook { 
+    position: fixed; 
+    bottom: 410px; 
+    right: 0px; 
+  } 
+  
+  .navbar-brand { 
+    padding: 0 0px; 
+    height: 28px; 
+    line-height: 20px; 
+  } 
+
+
+  .bookLabel {
+    color: #ff726f;
+  }
+  
+   
+  .cursor-pointer{
+    cursor: pointer;
+  }

@@ -1,0 +1,109 @@
+<div class="container p-2 text-center font-weight-bold">
+    <span class="headerStyle">
+        I created this book with all of my personal, very detailed and easy
+        to learn method that will help you in your natural eye restoration journey.</span>
+</div>
+<div class="container p-2 text-center font-weight-bold">
+    <span class="headerStyle">I BELIEVE IN YOU :)</span>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6  offset-lg-2 offset-md-1 offset-sm-0 mb-4">
+            <!-- <img class="rounded img-thumbnail" [src]="product.img"> -->
+
+            <div class="wrapper">
+                <div class="book">
+                    <div class="inner-book">
+                        <div class="img" style="padding-top: calc(1.07 * 100%)">
+                            <img class="rounded img-thumbnail" [src]="product.img">
+                        </div>
+                        <div class="img final-page" style="padding-top: calc(1.07 * 100%) !important">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-5 col-md-4 col-sm-5">
+            <div class="col-12 font-weight-bold">Myopia is Reversible - ${{ product.price }}
+            </div>
+            <div class="col-12" style="font-weight:500">
+                (How To Reverse Your Myopia)
+            </div>
+            <div class="col-12 mb-2 mt-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="col-12">{{ product.description }}</div>
+            <!-- <div class="col-2 mt-2" #paypal>
+            </div> -->
+            <div class="col-2 mt-2">
+                <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-container *ngIf="false">
+    <div class="row text-center pt-4">
+        <div class="col-sm-3 offset-sm-4 px-0 custom-file">
+            <input type="file" id="files" class="form-control" (change)="chooseFile($event)">
+        </div>
+        <div class="col-sm-1 px-0 text-left">
+            <button class="btn btn-primary" (click)="uploadFile()">Upload</button>
+        </div>
+    </div>
+
+    <div class="row text-center pt-2 mb-2">
+        <div class="col-sm-3 offset-sm-4 px-0 custom-file">
+        </div>
+        <div class="col-sm-1 px-0 text-left">
+            <button class="btn btn-primary" (click)="download()">Download</button>
+        </div>
+    </div>
+</ng-container>
+
+
+<div id="paypal-button"></div>
+<!-- <div class="container-fluid mt-5">
+    <div class="row">
+        <div class="offset-md-1 col-md-3">
+            <img alt="img" class="img-responsive" src="assets/img/Outdoor2.jpg" />
+        </div>
+        <div class="col-md-7">
+            <h3>Blue T-Shirt</h3>
+            <p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </p>
+            <h5>$9.99</h5>
+            <p class="mt-3">
+                Rence Torres Myopia Website
+            </p>
+            <div class="row mt-2">
+                <div class="col-md-3">
+                    <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="wrapper">
+    <div class="book">
+        <div class="inner-book">
+            <div class="img" style="padding-top: calc(1.07 * 100%)">
+                <img class="rounded img-thumbnail" [src]="product.img">
+            </div>
+            <div class="img final-page" style="padding-top: calc(1.07 * 100%)">
+            </div>
+        </div>
+    </div>
+</div> -->

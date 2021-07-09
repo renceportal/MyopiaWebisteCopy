@@ -1,0 +1,173 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">
+    <span class="Myopia font-weight-bold">Myopia is</span>
+    <span class="Revesible font-weight-bold"> reversible!</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{ show: navbarOpen }">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="/home">About Me <span class="sr-only">(current)</span></a>
+      </li>
+
+      <ng-container *ngIf="false">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/howto">How?</a>
+        </li>
+      </ng-container>
+
+      <ng-container *ngIf="true">
+        <li class="nav-item">
+          <a (click)="clearTimer()" class="nav-link" href="#" routerLink="/program">My Book</a>
+        </li>
+      </ng-container>
+
+      <ng-container *ngIf="true">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/myopia">Myopia</a>
+        </li>
+      </ng-container>
+
+      <ng-container *ngIf="true">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/training">Training</a>
+        </li>
+      </ng-container>
+
+      <ng-container *ngIf="true">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/lazy-eye-training">Lazy Eye Training</a>
+        </li>
+      </ng-container>
+
+      <ng-container *ngIf="true">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/myopia-training">Myopia Training</a>
+        </li>
+      </ng-container>
+
+      <ng-container *ngIf="false">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/contact">Contact</a>
+        </li>
+      </ng-container>
+
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> -->
+    </ul>
+  </div>
+</nav>
+
+<br />
+<div class="w-100 p-8 mt-2">
+
+  <body>
+    <div class="pageContentWrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </body>
+</div>
+
+<div class="footer navbar navbar-expand-lg navbar-dark bg-secondary bgColor">
+  <div class="footerText">
+    <p>Copyright &copy; 2018 Myopia is reversible</p>
+  </div>
+</div>
+
+<ng-container *ngIf="false">
+  <div id="mybuttonBook">
+    <a class="book" href="#" routerLink="/youtube"><img alt="img" class="img-responsiveBook rounded-circle mr-1"
+        src="assets/ebook/barbell.png" />
+      <!-- <label class="bookLabel font-weight-bold">My Book</label> -->
+    </a>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="false">
+  <div id="mybutton">
+    <!-- <a class="feedback1" href="https://www.facebook.com/florence.torres.1441"><img alt="img"
+      class="img-responsive rounded-circle" src="assets/img/fb.png" />
+  </a> -->
+    <a class="feedback1" href="https://www.facebook.com/groups/2811587662457322/"><img alt="img"
+        class="img-responsive rounded-circle" src="assets/img/fb.png" />
+    </a>
+    <div id="mybutton">
+      <a class="feedback" href="mailto:FlorencioTorres1122@gmail.com"><img alt="img"
+          class="img-responsive rounded-circle" src="assets/img/email4.png" />
+      </a>
+    </div>
+  </div>
+</ng-container>
+
+
+
+
+
+
+<div class="backdrop" [ngStyle]="{'display':display}">
+  <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center" style="background-color: #17a2b8;">
+          <div class="row">
+            <div class="col-12 text-center">
+              <span class="h4 font-weight-bold text-white">Get your copy on How you can possibly
+                improve your
+                Eyesight</span>
+            </div>
+            <div class="col-12 text-center pt-2">
+              <span class="h4 font-weight-bold text-white" style="font-family: Florence, cursive;">click
+                <u class="cursor-pointer" (click)="clearTimer()" routerLink="/program">here</u></span>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-12"><span class="h6 font-weight-bold text-white">click here</span></div>
+
+          </div> -->
+          <!-- <button type="button" class="close" (click)="onCloseHandled()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body p-0">
+          <img class="rounded img-thumbnail" src="assets/ebook/advertise book.png">
+        </div>
+        <div class="modal-footer">
+          <div class="row col-12">
+            <div class="col-6">
+              <button type="button" class="btn btn-default" (click)="clearTimer()">Stop Showing</button>
+            </div>
+            <div class="col-6 text-right">
+              <button type="button" class="btn btn-default" (click)="onCloseHandled()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->

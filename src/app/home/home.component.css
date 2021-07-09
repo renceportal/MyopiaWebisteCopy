@@ -1,0 +1,265 @@
+textarea { 
+  resize: vertical; 
+  overflow: auto; 
+  max-width: 100%; 
+  max-height: 100%; 
+  width: 500px; 
+  height: 150px; 
+  background-color: #f0f0f0; 
+} 
+
+.nameTxt { 
+  resize: horizontal; 
+  max-width: 100%; 
+  max-height: 100%; 
+  width: 150px; 
+  background-color: #f0f0f0; 
+} 
+
+.default { 
+  display: block; 
+  width: auto; 
+  max-height: 100%; 
+  width: 40px; 
+} 
+
+.default { 
+  display: block; 
+  height: auto; 
+  max-width: 120%; 
+  height: 40px; 
+} 
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+
+@media all and (max-width: 2000px) {
+  .rence { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .rence { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 450px; 
+  } 
+  p {
+    font-size: 18px;
+  }
+  
+  .renceGlass { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .renceGlass { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 400px; 
+  } 
+  
+  .Glass { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .Glass { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 300px; 
+  } 
+
+  .GlassBook { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 100%; 
+  } 
+  .GlassBook { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 100%; 
+  } 
+
+  .glassP {
+    width: 100%;
+  }
+}
+@media all and (max-width: 1010px) {
+  .rence { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .rence { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 300px; 
+  } 
+
+  .renceText {
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  }
+  .renceText {
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 300px; 
+  }
+  p {
+    font-size: 11px;
+  }
+  .cssBox {
+    margin-bottom: 40px;
+  }
+
+  .renceGlass { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .renceGlass { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 230px; 
+  } 
+
+  .Glass { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .Glass { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 200px; 
+  } 
+
+  .GlassBook { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 100%; 
+  } 
+  .GlassBook { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 100%; 
+  } 
+
+  .glassP {
+    width: 200px;
+  }
+}
+@media all and (max-width: 640px) {
+  .rence { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .rence { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 500px; 
+  } 
+  .renceText {
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    /* width: 500px;  */
+    position: relative;
+  }
+  .renceText {
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    /* height: 500px;  */
+    position: relative;
+  }
+  p {
+    font-size: 15px;
+  }
+  .cssBox {
+    margin-bottom: 40px;
+  }
+
+  .renceGlass { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .renceGlass { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 400px; 
+  } 
+  
+  .Glass { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 500px; 
+  } 
+  .Glass { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 300px; 
+  } 
+
+  .GlassBook { 
+    display: block; 
+    width: auto; 
+    max-height: 100%; 
+    width: 100%; 
+  } 
+  .GlassBook { 
+    display: block; 
+    height: auto; 
+    max-width: 100%; 
+    height: 100%; 
+  } 
+
+  .glassP {
+    width: 100%;
+  }
+}
+
+.someImages {
+  background-color:#3B4656;
+}
+
+.firstMessage {
+  font-family: Florence, cursive;
+}
+
+
+
+.cursor-pointer {
+  cursor: pointer;
+  color: #ffac05 !important;
+}

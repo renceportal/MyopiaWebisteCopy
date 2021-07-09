@@ -1,0 +1,47 @@
+<ng-container *ngIf="show1 else showIntro">
+    <div class="body">
+        <div class="d-flex justify-content-center">
+            <div class="circle1">
+                <h1 style=font-size:35px>look here</h1>
+              
+            </div> 
+            <div class="circle5">
+                <h1 style=font-size:70px>{{focus}}</h1>
+            </div> 
+           <div class="loader loading--anti-clockwise"></div>
+        </div>
+     </div>
+</ng-container>
+<ng-template #showIntro>
+    <div class="bg-dark text-center">
+
+        <svg width="100%" height="100%" viewBox="-15 -25 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <path id="path">
+                   <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="2s" begin="7s" repeatCount=""/>
+               </path>
+               <text font-size="66" font-family="Montserrat" fill='hsla(36, 95%, 85%, 1)'>
+                   <textPath xlink:href="#path">Focus on the red ball 
+                   </textPath>
+               </text>
+               
+               <path id="path1">
+                   <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="2s" begin="9s" repeatCount=""/>
+               </path>
+               <text font-size="66" font-family="Montserrat" fill='hsla(36, 95%, 85%, 1)'>
+                   <textPath xlink:href="#path1">and recongize
+                   </textPath>
+               </text>
+
+               <path id="path2">
+                   <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="2s" begin="11s" repeatCount=""/>
+               </path>
+               <text font-size="66" font-family="Montserrat" fill='hsla(36, 95%, 85%, 1)'>
+                   <textPath xlink:href="#path2">the moving numbers.
+                   </textPath>
+               </text>
+        </svg>
+
+    </div>
+</ng-template>
+
+

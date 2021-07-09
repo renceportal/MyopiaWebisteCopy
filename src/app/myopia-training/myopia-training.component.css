@@ -1,0 +1,88 @@
+/* pheripheral vision */
+.circle1{
+    color:white;
+    position:absolute;
+    width:7%;
+    padding-bottom:7%;
+    background-color: red;
+    border-radius:50%;
+    top: 50%;
+    left: 45%;
+    animation: 6s linear infinite;
+}
+.circle1 h1{
+    font-weight: bolder;
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+}
+
+.circle5 {
+    color:white;
+    position:absolute;
+    width:7%;
+    padding-bottom:7%;
+    background-color: black;
+    border-radius:50%;
+    /* top: 50px;
+    right: 145px; */
+    top: 0%;
+    left: -45%;
+    animation: move4 6s linear infinite;
+}
+.circle5 h1{
+    font-weight: bolder;
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+}
+@keyframes move4 {
+    0%   { left:400px; top:420px;}
+    25%  { left:680px; top:120px;}
+    50%  { left:970px; top:430px;}
+    75%  { left:700px; top:720px;}
+    100% { left:400px; top:420px;}
+
+    /* 0%    {top: 100%; left: 0%}
+    25%   {top: 0%; left: 100%;}
+    50%   {top: 1000%; left: 200%;}
+    75%   {top: 200%; left: 100%;}
+    100%  {top: 100%; left: 0%;} */
+}
+.body {
+    display: flex;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.loader {
+    border: 3px solid #11a800;
+}
+.loading--anti-clockwise {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 32.5%;
+    left: 35.5%;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
